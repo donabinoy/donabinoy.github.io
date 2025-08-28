@@ -1,26 +1,209 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website!</title>
-    <style>
-        body { 
-            font-family: sans-serif; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f2f5;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <title>Dona Binoy - Senior iOS Software Engineer</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
 </head>
 <body>
-    <h1>Hello, World! My website is live!</h1>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">Dona Binoy</a>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="resume.pdf" class="button" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Senior iOS Software Engineer</h1>
+                    <p class="subtitle">Building and optimizing complex native iOS applications with Swift, SwiftUI, and UIKit.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button">View My Work</a>
+                        <a href="https://github.com/your-username" class="button-secondary" target="_blank">GitHub</a> <!-- Replace with your GitHub URL -->
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/dona_binoy.png" alt="Dona Binoy" onerror="this.onerror=null;this.src='https://placehold.co/400x400/EFEFEF/333333?text=Dona';">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section content-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    I am a detail-oriented and results-driven Senior Software Engineer with over 6 years of experience specializing in native iOS application development. My expertise lies in building, optimizing, and maintaining complex applications using Swift, SwiftUI, and UIKit. I have a proven track record of integrating with hardware via Bluetooth (BLE) for consumer electronics and developing secure, HIPAA-compliant solutions for the healthcare industry. As a collaborative team player with a strong foundation in software architecture, I am passionate about creating modular, reusable, and maintainable code, frequently utilizing the Swift Package Manager to achieve this.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>Swift</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks</h3>
+                        <ul>
+                            <li>SwiftUI</li>
+                            <li>UIKit</li>
+                            <li>Combine</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Platforms</h3>
+                        <ul>
+                            <li>Xcode</li>
+                            <li>SPM</li>
+                            <li>Git & JIRA</li>
+                            <li>iOS & macOS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Architecture</h3>
+                        <ul>
+                            <li>MVVM</li>
+                            <li>MVC</li>
+                            <li>Protocol-Oriented</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section content-section">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <!-- Project: Assets ADM -->
+                    <div class="project-card">
+                        <img src="images/projects/assetsadm.png" alt="Assets ADM App" onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/EFEFEF?text=Assets+ADM';">
+                        <div class="project-info">
+                            <h3>Assets ADM</h3>
+                            <p>An enterprise-grade asset management solution to reduce risks and costs associated with manual tracking by providing a complete asset history and audit trails.</p>
+                            <a href="#" class="button-secondary">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Sunrise Connect -->
+                    <div class="project-card">
+                        <img src="images/projects/sunrise_connect.png" alt="Sunrise Connect App" onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/EFEFEF?text=Sunrise+Connect';">
+                        <div class="project-info">
+                            <h3>Sunrise Connect</h3>
+                            <p>A comprehensive healthcare mobile app for booking doctor appointments, video consultations, accessing lab results, and scheduling home care visits.</p>
+                            <a href="#" class="button-secondary">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Doctormate -->
+                    <div class="project-card">
+                        <img src="images/projects/Aster_doctormate.png" alt="Doctormate App" onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/EFEFEF?text=Doctormate';">
+                        <div class="project-info">
+                            <h3>Doctormate</h3>
+                            <p>A patient-centric mobile app integrated with hospital systems, providing access to appointment history, scheduling, discharge summaries, and billing.</p>
+                            <a href="#" class="button-secondary">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Tiatelemed -->
+                    <div class="project-card">
+                        <img src="images/projects/tiateleMD.png" alt="Tiatelemed App" onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/EFEFEF?text=Tiatelemed';">
+                        <div class="project-info">
+                            <h3>Tiatelemed</h3>
+                            <p>A robust, HIPAA-compliant telehealth app connecting providers with patients for remote examinations, vital sign measurement, and e-prescribing.</p>
+                            <a href="#" class="button-secondary">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project: iWebClinics -->
+                    <div class="project-card">
+                        <img src="images/projects/iwebclicks.png" alt="iWebClinics App" onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/EFEFEF?text=iWebClinics';">
+                        <div class="project-info">
+                            <h3>iWebClinics</h3>
+                            <p>A versatile telehealth platform for real-time video communication or for scheduling the earliest available in-person appointments with healthcare providers.</p>
+                            <a href="#" class="button-secondary">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project: Link3 for instax -->
+                    <div class="project-card">
+                        <img src="images/projects/instax_mini_link.png" alt="Link3 for instax App" onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/EFEFEF?text=Link3+for+instax';">
+                        <div class="project-info">
+                            <h3>Link3 for instax</h3>
+                            <p>A companion mobile app for FUJIFILM instax printers, unlocking features like remote printing, creative frames, collages, and an AR studio.</p>
+                            <a href="#" class="button-secondary">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project: Instax Printer Driver -->
+                    <div class="project-card">
+                        <img src="images/projects/Printer_Driver.png" alt="Instax Printer Driver" onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/EFEFEF?text=Instax+Driver';">
+                        <div class="project-info">
+                            <h3>Instax Printer Driver for macOS</h3>
+                            <p>A macOS driver for seamless printing from the native Photos app, featuring advanced color adjustment functions and multiple quality modes.</p>
+                            <a href="#" class="button-secondary">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project: Wecare Feedback -->
+                    <div class="project-card">
+                        <img src="images/projects/wecare.png" alt="Wecare Feedback App" onerror="this.onerror=null;this.src='https://placehold.co/600x400/333333/EFEFEF?text=Wecare+Feedback';">
+                        <div class="project-info">
+                            <h3>Wecare Feedback</h3>
+                            <p>A cloud-based customer feedback platform using Net Promoter Score (NPS) analysis to help businesses assess and improve customer relationships.</p>
+                            <a href="#" class="button-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects or opportunities. Feel free to reach out.</p>
+            <a href="mailto:007donabinoy@gmail.com" class="email-link">007donabinoy@gmail.com</a>
+            <div class="social-links">
+                <!-- Replace with your actual social media links -->
+                <a href="https://github.com/your-username" target="_blank" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/dona-binoy-b0a666195/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+            <p class="copyright">&copy; 2025 Dona Binoy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

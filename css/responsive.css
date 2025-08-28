@@ -1,0 +1,46 @@
+/* --- Responsive Styles --- */
+
+/* Tablets and below */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+    .main-nav ul {
+        display: none; /* Simple hiding for now, can be replaced with a hamburger menu */
+    }
+    
+    .main-nav .button {
+        display: none;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+    }
+}
